@@ -1,0 +1,99 @@
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.product-image-zoomable {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  max-width: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+} 
+
+select {
+  font-size: 1rem;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.add-to-bag {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-bag:hover {
+  background-color: #0056b3;
+}
+
+.product-images {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-thumbnails {
+  display: flex;
+  margin-top: 10px;
+}
+
+.image-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.image-thumbnail.active {
+  border-color: #007bff;
+}
+
+/* ... your existing styles */
+
+.image-zoom-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+.zoomed-image {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+.add-to-cart{
+  background-color: red;
+    border: none;
+    padding: 5px;
+}
